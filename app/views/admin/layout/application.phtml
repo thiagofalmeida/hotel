@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><?= APP_NAME ?></title>
+    <?php stylesheet_include_tag('/bootstrap/css/bootstrap.min.css',
+                                 'application.css'); ?>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"></nav>
+
+  <div class="container">
+     <div class="row">
+
+       <?php if ($this->currentUser()) { ?>
+         <div class="col-md-3">
+           <div class="side-container">
+             <ul class="nav nav-pills nav-stacked custum-side-nav">
+                 <li>
+                    <span class="pull-left">Olá <?= $this->currentUser()->getName() ?></span>
+                    <div class="pull-right">
+                       <?= link_to('/admin/logout', 'Sair') ?>
+                    </div>
+                 </li>
+             </ul>
+             <hr />
+             <h5>Menu Administrativo</h5>
+             <ul class="nav nav-pills nav-stacked custum-side-nav">
+               <li class="<?= activeClass('/admin') ?>">
+                  <?= link_to('/admin', 'Dashboard') ?>
+               </li>
+               <li class="<?= activeClass('/admin/mensagens-recebidas') ?>">
+                  <?= link_to('/admin/mensagens-recebidas', 'Mensagens recebidas') ?>
+               </li>
+               <li class="<?= activeClass('/admin/usuarios(.*)') ?>">
+                  <?= link_to('/admin/usuarios', 'Usuários') ?>
+               </li>
+               <li class="<?= activeClass('/admin/categorias-de-quarto(.*)') ?>">
+                  <?= link_to('/admin/categorias-de-quarto', 'Categorias de quarto') ?>
+               </li>
+               <li class="<?= activeClass('/admin/quartos(.*)') ?>">
+                  <?= link_to('/admin/quartos', 'Quartos') ?>
+               </li>
+             </ul>
+           </div>
+         </div>
+      <?php } ?>
+
+      <div class="col-md-<?= $this->currentUser() ? '9' : '12' ?>">
+         <div class="center-container">
+            <?php foreach(Flash::message() as $key => $value){ ?>
+              <div class="alert alert-<?= $key ?> fade in">
+                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                 <?= $value ?>
+              </div>
+            <?php } ?>
+
+           <?php require $view; ?>
+
+         </div>
+       </div>
+     </div>
+  </div>
+
+<?php javascript_include_tag('jquery-1.10.2.min.js',
+                             '/bootstrap/js/bootstrap.min.js',
+                             'application.js') ?>
+</body>
+</html>

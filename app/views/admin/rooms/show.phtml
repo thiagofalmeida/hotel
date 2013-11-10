@@ -1,0 +1,78 @@
+<section id="rooms-admin">
+  <header class='page-header'>
+    <div class='clearfix'>
+      <div class='pull-left'>
+        <h3> Quarto <?= $room->getName(); ?> </h3>
+        <small class='help-block'>Cadastrado em <?= $room->getCreatedAt() ?></small>
+      </div>
+      <div class='pull-right'>
+        <?= link_to("/admin/quartos/{$room->getId()}/editar",'Editar')?> |
+        <?= link_to('/admin/quartos', 'Todos quartos')?>
+      </div>
+    </div>
+  </header>
+
+  <article>
+    <p><strong>Nome: </strong><?= $room->getName() ?></p>
+    <p><strong>Categoria: </strong><?= $room->getCategory()->getName() ?></p>
+    <p><strong>Preço: </strong><?= $room->getPrice() ?></p>
+  </article>
+
+  <article>
+    <hr />
+    <header>
+      <h3>Fotos do quarto</h3>
+    </header>
+
+    <form role="form" action="<?= $this->url_for("/admin/quartos/{$room->getId()}/imagens") ?>"
+          method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+
+        <div class="errors">
+         <?php foreach($photo->errors() as $key => $error ) {?>
+           <ul>
+            <li><?= $error ?></li>
+           </ul>
+         <?php } ?>
+        </div>
+
+        <label for="room_photo">Escolha sua Imagem</label>
+        <input type="file" id="room_photo" name="photo">
+        <p class="help-block">Escolha sua Imagem.</p>
+      </div>
+      <button type="submit" class="btn btn-primary">Adicionar Foto</button>
+    </form>
+  </article>
+
+  <article class="photos">
+
+    <div class="clearfix">
+      <?php foreach($room->photos() as $photo) { ?>
+
+          <div class="pull-left">
+
+            <a href="#"  data-toggle="modal" data-target="#<?= $photo->getId() ?>">
+              <?= image_tag('photos', $photo->getName(), 'thumb', 'class="img-thumbnail"') ?>
+            </a>
+            <div class="modal fade" id="<?= $photo->getId() ?>" >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                 <div class="modal-body center">
+                    <?= image_tag('photos', $photo->getName(), 'original', 'class="img-thumbnail"') ?>
+                  </div>
+               </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <form role="form" action="<?= $this->url_for("/admin/quarto-imagens/{$photo->getId()}/deletar") ?>"
+              method="POST" >
+              <button type="submit" class="btn btn-xs btn-danger" data-confirm="Tem certeza?">Remover</button>
+            </form>
+         </div>
+      <?php } ?>
+    </div>
+
+  </article>
+
+</section>
+

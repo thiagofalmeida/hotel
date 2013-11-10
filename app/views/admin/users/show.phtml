@@ -1,0 +1,18 @@
+<section>
+  <header class='page-header'>
+    <div class='clearfix'>
+      <div class='pull-left'>
+        <h3> Usuário <?= $user->getName(); ?> </h3>
+        <small class='help-block'>Cadastrado em <?= $user->getCreatedAt() ?></small>
+      </div>
+      <div class='pull-right'>
+        <?= link_to("/admin/usuarios/{$user->getId()}/editar",'Editar')?> |
+        <?= link_to('/admin/usuarios', 'Todos usuários')?>
+      </div>
+    </div>
+  </header>
+
+  <article>
+    <p><strong>Email: </strong><?= $user->getEmail() ?></p>
+  </article>
+</section>

@@ -1,0 +1,19 @@
+<section>
+
+  <form class="form-signin" action="<?= $this->url_for('/login') ?>" method="POST">
+    <h2 class="form-signin-heading">Login</h2>
+    <input type="text" class="form-control" name="user[email]" value="<?= $user->getEmail() ?>" placeholder="Seu email" autofocus>
+    <input type="password" class="form-control" name="user[password]" placeholder="Password">
+    <label class="checkbox">
+      <input type="checkbox" value="remember-me"> lembre-se
+    </label>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+  </form>
+
+  <div class="links">
+     <?= link_to('/registre-se', 'Registre-se') ?> |
+     <?= link_to('#', 'Esqueceu a senha?') ?> |
+     <?= link_to('/fale-conosco', 'Fale conosco') ?>
+  </div>
+
+</section>

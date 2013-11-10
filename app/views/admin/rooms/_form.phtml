@@ -1,0 +1,33 @@
+<form role="form" action="<?= $action ?>" method="POST">
+
+  <div class="form-group <?= $room->errors('name') ? 'has-error' : '' ?>">
+    <label class="control-label" for="room_name">Nome:*</label>
+    <input type="text" class="form-control" name="room[name]" value="<?= $room->getName() ?>"
+           id="room_name" placeholder="Seu nome">
+    <p class="help-block"><?= $room->errors('name') ?></p>
+  </div>
+
+  <div class="form-group <?= $room->errors('price') ? 'has-error' : '' ?>">
+    <label class="control-label" for="room_price">Preço:*</label>
+    <input type="text" class="form-control" name="room[price]" value="<?= $room->getPrice() ?>"
+           id="room_price" placeholder="Preço do quarto">
+    <p class="help-block"><?= $room->errors('price') ?></p>
+  </div>
+
+  <div class="form-group <?= $room->errors('category_id') ? 'has-error' : '' ?>" >
+    <label class='control-label' for='room_category_id'>Categoria *</label>
+    <select name='room[category_id]'>
+      <option value=''>Selecione uma categoria</option>
+      <?php foreach($categories as $category) {?>
+         <option value='<?= $category->getId() ?>'
+            <?= ($category->getId() === $room->getCategoryId()) ? 'selected' : '' ?> >
+            <?= $category->getName() ?>
+         </option>
+      <?php } ?>
+    </select>
+    <span class='help-inline'><?= @$room->errors('category_id')?></span>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary"> <?= $submit ?></button>
+</form>

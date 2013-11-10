@@ -1,0 +1,87 @@
+   <!-- subheader begin -->
+   <div id="subheader">
+      <div class="container">
+         <div class="row">
+            <div class="span12">
+               <h1>Contact Us</h1>
+               <span>This is custom slogan for each page.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- subheader close -->  
+
+   <div id="map-container">
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.id/maps?q=itc+depok&amp;hl=id&amp;sll=-6.248411,106.833801&amp;sspn=0.371998,0.529404&amp;ie=UTF8&amp;view=map&amp;f=d&amp;daddr=Jl.+Margonda+Raya+Kav+56,+Depok+16431&amp;geocode=CXBfEqpsWd8iFV5wnv8dev5dBiFfQlEfkZZ3Xw&amp;ll=-6.393762,106.82329&amp;spn=0.006295,0.006335&amp;output=embed"></iframe>
+   </div>
+
+   <!-- content begin -->
+   <div id="content">
+      <div class="container">
+         <div class="row">
+            <div class="span8">
+               <h4>Get in touch with us now!</h4>
+               Feel free to contact us by contact to get more information.<br /><br />
+               <div class="contact_form_holder">
+                  <form role="form" id="contact" class="row" name="form1" method="POST" action="<?= $this->url_for('/fale-conosco') ?>" />
+                     <div class="span4 <?= $contact->errors('name') ? 'has-error' : '' ?>">
+                        <label>Nome *</label>
+                        <input type="text" class="full" name="contact[name]" id="name" />
+                        <p class="help-block"><?= $contact->errors('name') ?></p>
+                     </div>
+
+                     <div class="span4 <?= $contact->errors('email') ? 'has-error' : '' ?>">
+                        <label>E-Mail <span class="req">*</span></label>
+                        <input type="text" class="full" name="contact[email]" id="email" />
+                        <p class="help-block"><?= $contact->errors('email') ?></p>
+                     </div>
+
+                     <div class="span8 <?= $contact->errors('content') ? 'has-error' : '' ?>">
+                        <label>Mensagem <span class="req">*</span></label>
+                        <textarea id="contact_content" rows="10" class="full" name='contact[content]'><?= $contact->getContent()?></textarea>
+                        <p class="help-block"><?= $contact->errors('content') ?></p>
+                        
+                        <p id="btnsubmit"><input type="submit" id="send" value="Send" class="btn btn-large" /></p> 
+                     </div>
+                  </form>
+               </div>
+            </div> 
+
+            <div id="sidebar" class="span4">
+               <div class="widget latest_news">
+                  <h4 class="title">Latest News</h4>
+                  <ul class="list-news"> 
+                     <li>
+                        <img src="/hotel/app/assets/img/thumbnail-1.jpg" alt="" class="img-polaroid" />
+                        <div class="text"><h5><a href="img/#">Lorem ipsum dolor sit amet</a></h5>
+                           Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        </div>
+                     </li>
+                     <li> 
+                        <img src="/hotel/app/assets/img/thumbnail-2.jpg" alt="" class="img-polaroid" />
+                        <div class="text">
+                           <h5><a href="/hotel/app/assets/img/#">Lorem ipsum dolor sit amet</a></h5>
+                           Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        </div>
+                     </li>
+                  </ul>
+                  <ul class="list-news">
+                     <li> <img src="/hotel/app/assets/img/thumbnail-3.jpg" alt="" class="img-polaroid" />
+                        <div class="text">
+                           <h5><a href="/hotel/app/assets/img/#">Lorem ipsum dolor sit amet</a></h5>
+                           Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+
+               <!-- widget category --><!-- widget tags --><!-- widget text -->
+               <div class="widget widget-text">
+                  <h4 class="title"><span>Text Widget</span></h4>
+                  <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.                </div>
+               </div>
+            </div>   
+         </div>
+      </div>
+   </div>
+   <!-- content close -->

@@ -1,0 +1,37 @@
+<section>
+  <header class='page-header'>
+    <h3> Todos os Usuários </h3>
+    <div class='text-right'><?= link_to('/admin/usuarios/novo', 'Novo usuário') ?></div>
+  </header>
+
+  <article>
+   <table class='table table-bordered table-striped'>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Data do Cadastro</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+       <?php foreach($users as $user) {?>
+          <tr>
+            <td>
+              <?= link_to("/admin/usuarios/{$user->getId()}", $user->getName())?>
+            </td>
+            <td><?= $user->getEmail() ?></td>
+            <td><?= format_date($user->getCreatedAt()); ?></td>
+            <td class='options'>
+              <ul>
+                <li> <?= link_to("/admin/usuarios/{$user->getId()}/editar", 'Editar')?></li>
+                <li> <?= link_to("/admin/usuarios/{$user->getId()}/deletar", 'Remover', "data-confirm='Tem certeza?'")?></li>
+              </ul>
+            </td>
+          </tr>
+       <?php } ?>
+      </tbody>
+    </table>
+  </article>
+</section>
+

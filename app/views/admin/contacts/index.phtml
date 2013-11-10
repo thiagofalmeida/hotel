@@ -1,0 +1,31 @@
+<section id="contacts">
+  <header class='page-header'>
+    <h3> Todos as Mensagens Recebidas </h3>
+  </header>
+
+  <article>
+   <table class='table table-bordered table-striped'>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Data do Cadastro</th>
+        </tr>
+      </thead>
+      <tbody>
+       <?php foreach($contacts as $contact) {?>
+          <tr>
+            <td>
+              <a href="#<?= $contact->getId() ?>"> <?= $contact->getName() ?> </a>
+            </td>
+            <td><?= $contact->getEmail() ?></td>
+            <td><?= format_date($contact->getCreatedAt()); ?></td>
+          </tr>
+          <tr id="<?= $contact->getId() ?>" class="message hidden" >
+            <td colspan="3"><?= $this->markdown($contact->getContent()) ?></td>
+          </tr>
+       <?php } ?>
+      </tbody>
+    </table>
+  </article>
+</section>

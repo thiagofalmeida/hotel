@@ -1,0 +1,38 @@
+<section>
+  <header class='page-header'>
+    <h3> Todos os Quartos </h3>
+    <div class='text-right'><?= link_to('/admin/quartos/novo', 'Novo quarto') ?></div>
+  </header>
+
+  <article>
+   <table class='table table-bordered table-striped'>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Preço</th>
+          <th>Categoria</th>
+          <th>Data do Cadastro</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+       <?php foreach($rooms as $room) {?>
+          <tr>
+            <td><?= $room->getName() ?></td>
+            <td><?= $room->getPrice() ?></td>
+            <td><?= $room->getCategory()->getName() ?></td>
+            <td><?= format_date($room->getCreatedAt()); ?></td>
+            <td class='options'>
+              <ul>
+                <li> <?= link_to("/admin/quartos/{$room->getId()}", 'Visualizar')?></li>
+                <li> <?= link_to("/admin/quartos/{$room->getId()}/editar", 'Editar')?></li>
+                <li> <?= link_to("/admin/quartos/{$room->getId()}/deletar", 'Remover', "data-confirm='Tem certeza?'")?></li>
+              </ul>
+            </td>
+          </tr>
+       <?php } ?>
+      </tbody>
+    </table>
+  </article>
+</section>
+

@@ -1,0 +1,143 @@
+[09.11.2013 - 21:09:35][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:09:35][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:14:02][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:14:02][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:15:22][NOTICE] - /hotel/
+[09.11.2013 - 21:15:22][NOTICE] - match: / with /
+[09.11.2013 - 21:17:03][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:17:03][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:17:08][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:17:08][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:17:42][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:17:42][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:18:39][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:18:39][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:19:47][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:19:47][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:20:04][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:20:04][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:20:40][NOTICE] - /hotel/
+[09.11.2013 - 21:20:40][NOTICE] - match: / with /
+[09.11.2013 - 21:20:41][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:20:41][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:20:43][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:20:43][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:20:51][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:20:51][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:21:28][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:21:28][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:26:45][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:26:45][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:26:45][NOTICE] - /hotel/
+[09.11.2013 - 21:26:45][NOTICE] - match: / with /
+[09.11.2013 - 21:27:53][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:27:53][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:28:02][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:28:02][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:28:02][NOTICE] - /hotel/
+[09.11.2013 - 21:28:02][NOTICE] - match: / with /
+[09.11.2013 - 21:29:29][NOTICE] - /hotel/
+[09.11.2013 - 21:29:29][NOTICE] - match: / with /
+[09.11.2013 - 21:29:31][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:29:31][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:29:37][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:29:37][NOTICE] - match: /fale-conosco with /fale-conosco
+[09-Nov-2013 21:29:37 America/Sao_Paulo] PHP Fatal error:  Call to undefined function redirect_to() in /var/www/html/hotel/core/models/database.php on line 24
+[09.11.2013 - 21:31:11][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:31:11][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:31:11][NOTICE] - /hotel/
+[09.11.2013 - 21:31:11][NOTICE] - match: / with /
+[09.11.2013 - 21:31:12][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:31:12][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:31:17][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:31:17][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:31:17][NOTICE] - /hotel/
+[09.11.2013 - 21:31:17][NOTICE] - match: / with /
+[09.11.2013 - 21:31:29][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:31:29][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:31:52][NOTICE] - /hotel/fale-conosco
+[09.11.2013 - 21:31:52][NOTICE] - match: /fale-conosco with /fale-conosco
+[09.11.2013 - 21:31:52][NOTICE] - /hotel/
+[09.11.2013 - 21:31:52][NOTICE] - match: / with /
+[10.11.2013 - 14:07:22][NOTICE] - /hotel/
+[10.11.2013 - 14:07:22][NOTICE] - match: / with /
+[10.11.2013 - 14:08:31][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:08:31][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:09:37][NOTICE] - /hotel/
+[10.11.2013 - 14:09:37][NOTICE] - match: / with /
+[10.11.2013 - 14:09:50][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:09:50][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:09:55][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:09:55][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:09:55][NOTICE] - /hotel/
+[10.11.2013 - 14:09:55][NOTICE] - match: / with /
+[10.11.2013 - 14:10:51][NOTICE] - /hotel/
+[10.11.2013 - 14:10:51][NOTICE] - match: / with /
+[10.11.2013 - 14:14:20][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:14:20][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:14:28][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:14:28][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:14:28][NOTICE] - /hotel/
+[10.11.2013 - 14:14:28][NOTICE] - match: / with /
+[10.11.2013 - 14:14:42][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:14:42][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:23:44][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:23:44][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:23:50][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:23:50][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:23:50][NOTICE] - /hotel/
+[10.11.2013 - 14:23:50][NOTICE] - match: / with /
+[10.11.2013 - 14:24:13][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:24:13][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:24:26][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:24:26][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:24:26][NOTICE] - /hotel/
+[10.11.2013 - 14:24:26][NOTICE] - match: / with /
+[10.11.2013 - 14:24:32][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:24:32][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:24:49][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:24:49][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:24:55][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:24:55][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:24:55][NOTICE] - /hotel/
+[10.11.2013 - 14:24:55][NOTICE] - match: / with /
+[10.11.2013 - 14:25:00][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:25:00][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:33:27][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:33:27][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:33:27][NOTICE] - /hotel/
+[10.11.2013 - 14:33:27][NOTICE] - match: / with /
+[10.11.2013 - 14:47:42][NOTICE] - /hotel/
+[10.11.2013 - 14:47:42][NOTICE] - match: / with /
+[10.11.2013 - 14:47:44][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:47:44][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:47:56][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:47:56][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:47:56][NOTICE] - /hotel/
+[10.11.2013 - 14:47:56][NOTICE] - match: / with /
+[10.11.2013 - 14:50:18][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:50:18][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:50:53][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:50:53][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:51:33][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:51:33][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:51:53][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:51:53][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:51:53][NOTICE] - /hotel/
+[10.11.2013 - 14:51:53][NOTICE] - match: / with /
+[10.11.2013 - 14:51:58][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:51:58][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:52:12][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:52:12][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:54:40][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:54:40][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 14:59:10][NOTICE] - /hotel/
+[10.11.2013 - 14:59:10][NOTICE] - match: / with /
+[10.11.2013 - 14:59:33][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 14:59:33][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 15:03:27][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 15:03:27][NOTICE] - match: /fale-conosco with /fale-conosco
+[10.11.2013 - 15:03:29][NOTICE] - /hotel/
+[10.11.2013 - 15:03:29][NOTICE] - match: / with /
+[10.11.2013 - 15:03:46][NOTICE] - /hotel/fale-conosco
+[10.11.2013 - 15:03:46][NOTICE] - match: /fale-conosco with /fale-conosco

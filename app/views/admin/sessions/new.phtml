@@ -1,0 +1,14 @@
+<section>
+
+  <form class="form-signin" action="<?= $this->url_for('/admin/login') ?>" method="POST">
+    <h2 class="form-signin-heading">Login Administrativo</h2>
+    <input type="text" class="form-control" name="user[email]" value="<?= $user->getEmail() ?>" placeholder="Seu email" autofocus>
+    <input type="password" class="form-control" name="user[password]" placeholder="Password">
+    <label class="checkbox">
+      <input type="checkbox" value="remember-me"> lembre-se
+    </label>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+  </form>
+
+</section>
+
